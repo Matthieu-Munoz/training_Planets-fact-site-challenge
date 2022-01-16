@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+    <title>Frontend Mentor | Planet facts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Antonio:wght@300;400;500;700&family=Spartan:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__main">
+            <h2 class="header__main__title">The planets</h2>
+            <img class="header__main__burger" src="../assets/icon-hamburger.svg" alt="hamburger icon menu" height="17px"
+                width="24px" />
+            <div class="header__secondary--desktop">
+                <h3 data-navdesktop="0"
+                    class="header__secondary--desktop__title header__secondary--desktop__title--active">Mercury</h3>
+                <h3 data-navdesktop="1" class="header__secondary--desktop__title">Venus</h3>
+                <h3 data-navdesktop="2" class="header__secondary--desktop__title">Earth</h3>
+                <h3 data-navdesktop="3" class="header__secondary--desktop__title">Mars</h3>
+                <h3 data-navdesktop="4" class="header__secondary--desktop__title">Jupiter</h3>
+                <h3 data-navdesktop="5" class="header__secondary--desktop__title">Saturn</h3>
+                <h3 data-navdesktop="6" class="header__secondary--desktop__title">Uranus</h3>
+                <h3 data-navdesktop="7" class="header__secondary--desktop__title">Neptune</h3>
+            </div>
+        </div>
+        <div class="header__secondary">
+            <h3 data-nav="1" class="header__secondary__title header__secondary__title--active">Overview</h3>
+            <h3 data-nav="2" class="header__secondary__title">Structure</h3>
+            <h3 data-nav="3" class="header__secondary__title">Surface</h3>
+        </div>
+        <div class="header__secondary--tablette">
+            <h3 data-navtablette="0"
+                class="header__secondary--tablette__title header__secondary--tablette__title--active">Mercury</h3>
+            <h3 data-navtablette="1" class="header__secondary--tablette__title">Venus</h3>
+            <h3 data-navtablette="2" class="header__secondary--tablette__title">Earth</h3>
+            <h3 data-navtablette="3" class="header__secondary--tablette__title">Mars</h3>
+            <h3 data-navtablette="4" class="header__secondary--tablette__title">Jupiter</h3>
+            <h3 data-navtablette="5" class="header__secondary--tablette__title">Saturn</h3>
+            <h3 data-navtablette="6" class="header__secondary--tablette__title">Uranus</h3>
+            <h3 data-navtablette="7" class="header__secondary--tablette__title">Neptune</h3>
+        </div>
+        <div class="header__mobile header__mobile--hidden">
+            <a data-navmobile="0" href="#" class="header__mobile__link">
+                <span class="header__mobile__link__dot dot--mercury"></span>
+                <h4 class="header__mobile__link__title">Mercury</h4>
+                <img class="header__mobile__link__icon" src="../assets/icon-chevron.svg" alt="chevron icon" height="8px"
+                    width="6px" />
+            </a>
+            <a data-navmobile="1" href="#" class="header__mobile__link">
+                <span class="header__mobile__link__dot dot--venus"></span>
+                <h4 class="header__mobile__link__title">venus</h4>
+                <img class="header__mobile__link__icon" src="../assets/icon-chevron.svg" alt="chevron icon" height="8px"
+                    width="6px" />
+            </a>
+            <a data-navmobile="2" href="#" class="header__mobile__link">
+                <span class="header__mobile__link__dot dot--earth"></span>
+                <h4 class="header__mobile__link__title">earth</h4>
+                <img class="header__mobile__link__icon" src="../assets/icon-chevron.svg" alt="chevron icon" height="8px"
+                    width="6px" />
+            </a>
+            <a data-navmobile="3" href="#" class="header__mobile__link">
+                <span class="header__mobile__link__dot dot--mars"></span>
+                <h4 class="header__mobile__link__title">mars</h4>
+                <img class="header__mobile__link__icon" src="../assets/icon-chevron.svg" alt="chevron icon" height="8px"
+                    width="6px" />
+            </a>
+            <a data-navmobile="4" href="#" class="header__mobile__link">
+                <span class="header__mobile__link__dot dot--jupiter"></span>
+                <h4 class="header__mobile__link__title">jupiter</h4>
+                <img class="header__mobile__link__icon" src="../assets/icon-chevron.svg" alt="chevron icon" height="8px"
+                    width="6px" />
+            </a>
+            <a data-navmobile="5" href="#" class="header__mobile__link">
+                <span class="header__mobile__link__dot dot--saturn"></span>
+                <h4 class="header__mobile__link__title">saturn</h4>
+                <img class="header__mobile__link__icon" src="../assets/icon-chevron.svg" alt="chevron icon" height="8px"
+                    width="6px" />
+            </a>
+            <a data-navmobile="6" href="#" class="header__mobile__link">
+                <span class="header__mobile__link__dot dot--uranus"></span>
+                <h4 class="header__mobile__link__title">uranus</h4>
+                <img class="header__mobile__link__icon" src="../assets/icon-chevron.svg" alt="chevron icon" height="8px"
+                    width="6px" />
+            </a>
+            <a data-navmobile="7" href="#" class="header__mobile__link">
+                <span class="header__mobile__link__dot dot--neptune"></span>
+                <h4 class="header__mobile__link__title">neptune</h4>
+                <img class="header__mobile__link__icon" src="../assets/icon-chevron.svg" alt="chevron icon" height="8px"
+                    width="6px" />
+            </a>
+        </div>
+    </header>
+    <main data-planet="mercury">
+        <div class="main__planet">
+            <img class="main__planet--img" src="../assets/planet-mercury.svg" alt="Mercury" width="111px" height="auto">
+        </div>
+        <div class="main__content">
+            <div class="content">
+                <h1 class="content__title">Mercury</h1>
+                <div class="content__desc" data-id="1">
+                    <p class="content__text">
+                        Mercury is the smallest planet in the Solar System and the closest
+                        to the Sun. Its orbit around the Sun takes 87.97 Earth days, the
+                        shortest of all the Sun's planets. Mercury is one of four terrestrial
+                        planets in the Solar System, and is a rocky body like Earth.
+                    </p>
+                    <p class="content__text--link">Source : <a
+                            href="https://en.wikipedia.org/wiki/Mercury_(planet)">Wikipedia</a>
+                        <img src="../assets/icon-source.svg" alt="source icon" width="12px" height="12px">
+                    </p>
+                </div>
+                <div class="content__desc text--hiden" data-id="2">
+                    <p class="content__text">
+                        Mercury appears to have a solid silicate crust and mantle overlying a
+                        solid, iron sulfide outer core layer, a deeper liquid core layer, and
+                        a solid inner core. The planet's density is the second highest in the
+                        Solar System at 5.427 g/cm3 , only slightly less than Earth's density.
+                    </p>
+                    <p class="content__text--link">Source : <a
+                            href="https://en.wikipedia.org/wiki/Mercury_(planet)">Wikipedia</a>
+                        <img src="../assets/icon-source.svg" alt="source icon" width="12px" height="12px">
+                    </p>
+                </div>
+                <div class="content__desc text--hiden" data-id="3">
+                    <p class="content__text">
+                        urface Geology Content Start
+                        Mercury's surface is similar in appearance to that of the Moon, showing
+                        extensive mare-like plains and heavy cratering, indicating that it has
+                        been geologically inactive for billions of years. It is more heterogeneous
+                        than either Mars's or the Moon’s.
+                    </p>
+                    <p class="content__text--link">Source :
+                        <a href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology ">Wikipedia</a>
+                        <img src="../assets/icon-source.svg" alt="source icon" width="12px" height="12px">
+                    </p>
+                </div>
+            </div>
+            <div class="main__nav">
+                <div class="main__nav--div main__nav--active">
+                    <p class="main__nav--p" data-navbtn="1">
+                        <span class="main__nav--index">01</span> Overview
+                    </p>
+                </div>
+                <div class="main__nav--div">
+                    <p class="main__nav--p" data-navbtn="2">
+                        <span class="main__nav--index">02</span> Internal Structure
+                    </p>
+                </div>
+                <div class="main__nav--div">
+                    <p class="main__nav--p" data-navbtn="3">
+                        <span class="main__nav--index">03</span> Surface Geology
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="main__info">
+            <div class="main__info__div main__info--rot">
+                <p class="main__info__p">
+                    Rotation Time
+                </p>
+                <span class="main__info--data">58.6 Days</span>
+
+            </div>
+            <div class="main__info__div main__info--rev">
+                <p class="main__info__p">
+                    Revolution Time
+                </p>
+                <span class="main__info--data">87.97 Days</span>
+
+            </div>
+            <div class="main__info__div main__info--rad">
+                <p class="main__info__p">
+                    Radius
+                </p>
+                <span class="main__info--data">2,439.7 KM</span>
+            </div>
+            <div class="main__info__div main__info--tem">
+                <p class="main__info__p">
+                    Average Temp.
+                </p>
+                <span class="main__info--data">430°c</span>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <script src="../js/mainNav.js"></script>
+        <script src="../js/responsiveMenu.js"></script>
+        <script src="../js/planetNav.js"></script>
+        <script src="../js/app.js"></script>
+    </footer>
+</body>
+
+</html>
