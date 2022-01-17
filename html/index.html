@@ -34,9 +34,9 @@
             </div>
         </div>
         <div class="header__secondary">
-            <h3 data-nav="1" class="header__secondary__title header__secondary__title--active">Overview</h3>
-            <h3 data-nav="2" class="header__secondary__title">Structure</h3>
-            <h3 data-nav="3" class="header__secondary__title">Surface</h3>
+            <h3 data-navheader="1" class="header__secondary__title header__secondary__title--active">Overview</h3>
+            <h3 data-navheader="2" class="header__secondary__title">Structure</h3>
+            <h3 data-navheader="3" class="header__secondary__title">Surface</h3>
         </div>
         <div class="header__secondary--tablette">
             <h3 data-navtablette="0"
@@ -100,64 +100,67 @@
             </a>
         </div>
     </header>
-    <main data-planet="mercury">
-        <div class="main__planet">
-            <img class="main__planet--img" src="../assets/planet-mercury.svg" alt="Mercury" width="111px" height="auto">
+    <main id="mercury">
+        <div class="main__planet main__planet--active" id="main__planet--1">
+            <img class="main__planet--img" src="../assets/planet-mercury.svg" data-content="imgOverview"  alt="" height="auto">
+            <img class="main__planet--overlay overlayhidden planet-mercury--overlay" src="../assets/geology-mercury.png" data-content="imgOverlay" alt="">
+        </div>
+        <div class="main__planet" id="main__planet--2">
+            <img class="main__planet--img" src="../assets/planet-mercury-internal.svg" data-content="imgInternal" id="" alt="" height="auto">
         </div>
         <div class="main__content">
             <div class="content">
-                <h1 class="content__title">Mercury</h1>
-                <div class="content__desc" data-id="1">
-                    <p class="content__text">
+                <h1 class="content__title" data-content="planetTitle">Mercury</h1>
+                <div class="content__desc content__desc--active" id="content__desc--1" data-id="1">
+                    <p class="content__text" data-content="overviewDesc">
                         Mercury is the smallest planet in the Solar System and the closest
                         to the Sun. Its orbit around the Sun takes 87.97 Earth days, the
                         shortest of all the Sun's planets. Mercury is one of four terrestrial
                         planets in the Solar System, and is a rocky body like Earth.
                     </p>
                     <p class="content__text--link">Source : <a
-                            href="https://en.wikipedia.org/wiki/Mercury_(planet)">Wikipedia</a>
+                            href="https://en.wikipedia.org/wiki/Mercury_(planet)" data-content="overviewLink">Wikipedia</a>
                         <img src="../assets/icon-source.svg" alt="source icon" width="12px" height="12px">
                     </p>
                 </div>
-                <div class="content__desc text--hiden" data-id="2">
-                    <p class="content__text">
+                <div class="content__desc" id="content__desc--2" data-id="2">
+                    <p class="content__text" data-content="internalDesc">
                         Mercury appears to have a solid silicate crust and mantle overlying a
                         solid, iron sulfide outer core layer, a deeper liquid core layer, and
                         a solid inner core. The planet's density is the second highest in the
                         Solar System at 5.427 g/cm3 , only slightly less than Earth's density.
                     </p>
                     <p class="content__text--link">Source : <a
-                            href="https://en.wikipedia.org/wiki/Mercury_(planet)">Wikipedia</a>
+                            href="https://en.wikipedia.org/wiki/Mercury_(planet)" data-content="internalLink">Wikipedia</a>
                         <img src="../assets/icon-source.svg" alt="source icon" width="12px" height="12px">
                     </p>
                 </div>
-                <div class="content__desc text--hiden" data-id="3">
-                    <p class="content__text">
-                        urface Geology Content Start
+                <div class="content__desc" id="content__desc--3" data-id="3">
+                    <p class="content__text" data-content="surfaceDesc">
                         Mercury's surface is similar in appearance to that of the Moon, showing
                         extensive mare-like plains and heavy cratering, indicating that it has
                         been geologically inactive for billions of years. It is more heterogeneous
                         than either Mars's or the Moon’s.
                     </p>
                     <p class="content__text--link">Source :
-                        <a href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology ">Wikipedia</a>
+                        <a href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology " data-content="surfaceLink">Wikipedia</a>
                         <img src="../assets/icon-source.svg" alt="source icon" width="12px" height="12px">
                     </p>
                 </div>
             </div>
             <div class="main__nav">
-                <div class="main__nav--div main__nav--active">
-                    <p class="main__nav--p" data-navbtn="1">
+                <div class="main__nav--div main__nav--active" data-navbtn="1">
+                    <p class="main__nav--p">
                         <span class="main__nav--index">01</span> Overview
                     </p>
                 </div>
-                <div class="main__nav--div">
-                    <p class="main__nav--p" data-navbtn="2">
+                <div class="main__nav--div" data-navbtn="2">
+                    <p class="main__nav--p">
                         <span class="main__nav--index">02</span> Internal Structure
                     </p>
                 </div>
-                <div class="main__nav--div">
-                    <p class="main__nav--p" data-navbtn="3">
+                <div class="main__nav--div" data-navbtn="3">
+                    <p class="main__nav--p">
                         <span class="main__nav--index">03</span> Surface Geology
                     </p>
                 </div>
@@ -168,31 +171,33 @@
                 <p class="main__info__p">
                     Rotation Time
                 </p>
-                <span class="main__info--data">58.6 Days</span>
+                <span class="main__info--data" data-content="rotation">58.6 Days</span>
 
             </div>
             <div class="main__info__div main__info--rev">
                 <p class="main__info__p">
                     Revolution Time
                 </p>
-                <span class="main__info--data">87.97 Days</span>
+                <span class="main__info--data" data-content="revolution">87.97 Days</span>
 
             </div>
             <div class="main__info__div main__info--rad">
                 <p class="main__info__p">
                     Radius
                 </p>
-                <span class="main__info--data">2,439.7 KM</span>
+                <span class="main__info--data" data-content="radius">2,439.7 KM</span>
             </div>
             <div class="main__info__div main__info--tem">
                 <p class="main__info__p">
                     Average Temp.
                 </p>
-                <span class="main__info--data">430°c</span>
+                <span class="main__info--data" data-content="temperature">430°c</span>
             </div>
         </div>
     </main>
     <footer>
+        <script src="../js/data.js"></script>
+        <script src="../js/pageContent.js"></script>
         <script src="../js/mainNav.js"></script>
         <script src="../js/responsiveMenu.js"></script>
         <script src="../js/planetNav.js"></script>

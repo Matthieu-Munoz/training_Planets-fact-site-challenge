@@ -1,14 +1,14 @@
 @keyframes fadeInOpacity {
     0% {
-        opacity: 0;
+      opacity: 0
     }
-
+  
     100% {
-        opacity: 1;
+      opacity: 1
     }
-}
-
-:root {
+  }
+  
+  :root {
     --0: #419EBB;
     --1: #EDA249;
     --2: #6F2ED6;
@@ -21,93 +21,91 @@
     --main-bg: #070724;
     --dark-grey: #38384F;
     --grey: #838390;
-    --active-color: var(--0);
-}
-
-* {
+    --active-color: var(--0)
+  }
+  
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: none;
-}
-
-li {
-    list-style: none;
-}
-
-a {
+    border: none
+  }
+  
+  a {
     text-decoration: none;
-    color: var(--white);
-}
-
-body {
+    color: var(--white)
+  }
+  
+  body {
     background-color: var(--main-bg);
-    font-family: 'Spartan', sans-serif;
+    font-family: Spartan, sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 25px;
-    color: white;
+    color: #fff;
     background-image: url(../assets/background-stars.svg);
-    background-size: cover;
-}
-
-h2 {
-    font-family: 'Antonio', sans-serif;
+    background-size: cover
+  }
+  
+  h2 {
+    font-family: Antonio, sans-serif;
     font-size: 2.5em;
     font-weight: 500;
     text-transform: uppercase;
     line-height: 1em;
-    letter-spacing: -1.5px;
-}
-
-h3 {
+    letter-spacing: -1.5px
+  }
+  
+  h3 {
     text-transform: uppercase;
-    font-size: 0.9em;
+    font-size: .9em;
     font-weight: 700;
     line-height: 5;
-    letter-spacing: 2.6px;
-}
-
-h4 {
+    letter-spacing: 2.6px
+  }
+  
+  h4 {
     text-transform: uppercase;
     font-size: 1.2em;
     font-weight: 700;
     line-height: 2;
-    letter-spacing: 1px;
-}
-
-.header__main {
+    letter-spacing: 1px
+  }
+  
+  .header__main {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 2em;
-    border-bottom: 0.2em solid var(--dark-grey);
-    height: 5rem;
-}
-
-.header__secondary {
+    border-bottom: .2em solid var(--dark-grey);
+    height: 5rem
+  }
+  
+  .header__secondary {
     display: flex;
     justify-content: space-between;
     padding: 0 2em;
     border-bottom: 1px solid var(--dark-grey);
     height: 4rem;
-    align-items: stretch;
-}
-
-.header__secondary__title {
+    align-items: stretch
+  }
+  
+  .header__secondary__title {
     color: var(--grey);
-}
-
-.header__secondary__title--active {
+    cursor: pointer
+  }
+  
+  .header__secondary__title--active {
     color: var(--white);
-    border-bottom: 5px solid var(--active-color);
-}
-
-.header__secondary--tablette {
+    border-bottom: 5px solid var(--active-color)
+  }
+  
+  .header__secondary--tablette {
     display: none;
-}
-
-.header__mobile {
+    cursor: pointer
+  }
+  
+  .header__mobile {
     position: fixed;
     top: 6em;
     width: 100%;
@@ -115,333 +113,434 @@ h4 {
     background-color: var(--main-bg);
     padding: 2em;
     transform: translateX(0);
-    transition: transform 0.2s ease-in-out;
-}
-
-.header__mobile--hidden {
-    transform: translateX(100%);
-
-}
-
-.header__main__burger--active {
-    opacity: 0.5;
-}
-
-.header__mobile__link {
+    transition: transform .2s ease-in-out;
+    z-index: 999
+  }
+  
+  .header__mobile--hidden {
+    transform: translateX(100%)
+  }
+  
+  .header__main__burger--active {
+    opacity: .5
+  }
+  
+  .header__mobile__link {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     padding: 1em 0;
-    border-bottom: 0.2em solid var(--dark-grey);
-}
-
-.header__mobile__link__dot {
-
+    border-bottom: .2em solid var(--dark-grey);
+    cursor: pointer
+  }
+  
+  .header__mobile__link__dot {
     height: 1.5em;
     width: 1.5em;
-    border-radius: 0.75em;
-}
-
-.header__mobile__link__title {
+    border-radius: .75em
+  }
+  
+  .header__mobile__link__title {
     margin-left: 2em;
-    padding-top: 3px;
-
-}
-
-.header__mobile__link__icon {
-    margin-left: auto;
-}
-
-.dot--mercury {
-    background-color: #DFF4FC;
-}
-
-.dot--venus {
-    background-color: #F5CC85;
-}
-
-.dot--earth {
-    background-color: #5760F9;
-}
-
-.dot--mars {
-    background-color: #FB6B49;
-}
-
-.dot--jupiter {
-    background-color: #EAAD7E;
-}
-
-.dot--saturn {
-    background-color: #FACA73;
-}
-
-.dot--uranus {
-    background-color: #6EEFD6;
-}
-
-.dot--neptune {
-    background-color: #4E80F6;
-}
-
-main {
+    padding-top: 3px
+  }
+  
+  .header__mobile__link__icon {
+    margin-left: auto
+  }
+  
+  .dot--mercury {
+    background-color: #dff4fc
+  }
+  
+  .dot--venus {
+    background-color: #f5cc85
+  }
+  
+  .dot--earth {
+    background-color: #5760f9
+  }
+  
+  .dot--mars {
+    background-color: #fb6b49
+  }
+  
+  .dot--jupiter {
+    background-color: #eaad7e
+  }
+  
+  .dot--saturn {
+    background-color: #faca73
+  }
+  
+  .dot--uranus {
+    background-color: #6eefd6
+  }
+  
+  .dot--neptune {
+    background-color: #4e80f6
+  }
+  
+  main {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-
-.main__planet {
+    align-items: center
+  }
+  
+  .main__planet {
+    display: none;
+    position: relative
+  }
+  
+  .main__planet--active {
     width: 100%;
     height: 40vh;
-    display: flex;
-}
-
-.main__planet--img {
-    margin: auto;
-}
-
-.main__content {
+    display: flex
+  }
+  
+  .main__planet--img {
+    margin: auto
+  }
+  
+  .main__planet--overlay {
+    position: absolute;
+    top: 62%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
     text-align: center;
-}
-
-.content__title {
-    font-family: 'Antonio', sans-serif;
+    width: 5em;
+    height: 6em
+  }
+  
+  .overlayhidden {
+    display: none
+  }
+  
+  .main__content {
+    text-align: center
+  }
+  
+  .content__title {
+    font-family: Antonio, sans-serif;
     font-size: 3.5em;
     font-weight: 500;
-    text-transform: uppercase;
-}
-
-.content__desc {
+    text-transform: uppercase
+  }
+  
+  .content__desc {
+    display: none
+  }
+  
+  .content__desc--active {
     margin-top: 3em;
     padding: 0 1.5em;
-}
-
-.text--hiden {
-    display: none;
-}
-
-.content__text--link {
+    display: block
+  }
+  
+  .content__text--link {
     margin-top: 2.5em;
-    color: var(--grey);
-}
-
-.content__text--link>a {
+    color: var(--grey)
+  }
+  
+  .content__text--link>a {
     color: var(--grey);
     font-weight: 700;
-    text-decoration: underline;
-}
-
-.main__info {
+    text-decoration: underline
+  }
+  
+  .main__info {
     padding: 1em;
-    width: 100%;
-}
-
-.main__info__div {
+    width: 100%
+  }
+  
+  .main__info__div {
     display: flex;
     align-items: center;
-    padding: 0.8em 2em;
-    margin: 0.8em;
-    border: 0.2em solid var(--dark-grey);
+    padding: .8em 2em;
+    margin: .8em;
+    border: .2em solid var(--dark-grey);
     text-transform: uppercase;
     font-weight: 700;
-    color: var(--grey);
-}
-
-.main__info__p {
+    color: var(--grey)
+  }
+  
+  .main__info__p {
     padding-top: 5px;
-    font-size: 0.9em;
-}
-
-.main__info--data {
+    font-size: .9em
+  }
+  
+  .main__info--data {
     margin-left: auto;
     color: var(--white);
-    font-family: 'Antonio', sans-serif;
-    font-size: 2em;
-}
-
-.main__nav {
+    font-family: Antonio, sans-serif;
+    font-size: 2em
+  }
+  
+  .main__nav {
+    display: none
+  }
+  
+  .header__secondary--desktop {
     display: none;
-}
-
-.header__secondary--desktop {
-    display: none;
-}
-
-
-@media screen and (min-width: 768px) {
-
+    cursor: pointer
+  }
+  
+  .planet-mercury {
+    width: 111px
+  }
+  
+  .planet-venus {
+    width: 154px
+  }
+  
+  .planet-earth {
+    width: 173px
+  }
+  
+  .planet-mars {
+    width: 129px
+  }
+  
+  .planet-jupiter {
+    width: 224px
+  }
+  
+  .planet-saturn {
+    width: 250px
+  }
+  
+  .planet-uranus {
+    width: 176px
+  }
+  
+  .planet-neptune {
+    width: 173px
+  }
+  
+  @media screen and (min-width:768px) {
     .header__main {
-        justify-content: center;
-        border: none;
+      justify-content: center;
+      border: none
     }
-
+  
     .header__main__burger {
-        display: none;
+      display: none
     }
-
+  
     .header__secondary {
-        display: none;
+      display: none
     }
-
+  
     .header__secondary--tablette {
-        display: flex;
-        justify-content: space-between;
-        padding: 0 2em;
-        border-bottom: 1px solid var(--dark-grey);
-        height: 4rem;
-        align-items: stretch;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 2em;
+      border-bottom: 1px solid var(--dark-grey);
+      height: 4rem;
+      align-items: stretch
     }
-
+  
     .header__secondary--tablette__title {
-        color: var(--grey);
+      color: var(--grey)
     }
-
+  
     .header__secondary--tablette__title--active {
-        color: var(--white);
-        border-bottom: 5px solid var(--active-color);
+      color: var(--white);
+      border-bottom: 5px solid var(--active-color)
     }
-
+  
     .main__content {
-        text-align: left;
-        display: flex;
-        align-items: center;
-        padding: 0 2em;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      padding: 0 2em
     }
-
+  
     .content {
-        width: 50%;
+      width: 50%
     }
-
-    .content__desc {
-        padding: 0;
+  
+    .content__desc--active {
+      padding: 0
     }
-
+  
     .main__nav {
-        display: block;
-        width: 50%;
-        padding-left: 4em;
+      display: block;
+      width: 50%;
+      padding-left: 4em
     }
-
+  
     .main__nav--div {
-        padding: 0.8em 2em;
-        border: 0.2em solid var(--dark-grey);
-        font-weight: 700;
-        margin-bottom: 1.5em;
-        text-transform: uppercase;
-        letter-spacing: 2.3px;
-        font-size: 0.9em;
+      padding: .8em 2em;
+      border: .2em solid var(--dark-grey);
+      font-weight: 700;
+      margin-bottom: 1.5em;
+      text-transform: uppercase;
+      letter-spacing: 2.3px;
+      font-size: .9em
     }
+  
     .main__nav--div:hover {
-        background-color: var(--dark-grey);
+      background-color: var(--dark-grey)
     }
-
+  
     .main__nav--index {
-        color: var(--grey);
-        padding-right: 1em;
+      color: var(--grey);
+      padding-right: 1em
     }
-
+  
     .main__nav--active {
-        background-color: var(--active-color);
-        border: 0.2em solid var(--active-color);
+      background-color: var(--active-color);
+      border: .2em solid var(--active-color)
     }
-
+  
     .main__nav--active .main__nav--index {
-        color: var(--white);
-        opacity: 0.8;
+      color: var(--white);
+      opacity: .8
     }
-
+  
     .main__info {
-        display: flex;
-        padding: 1em 1.5em;
+      display: flex;
+      padding: 1em 1.5em
     }
-
+  
     .main__info__div {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 25%;
-        padding: 1.5em;
-        padding-top: 1em;
-        margin: 0.5em;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 25%;
+      padding: 1.5em;
+      padding-top: 1em;
+      margin: .5em
     }
-
+  
     .main__info__p {
-        padding-top: 0;
-        font-size: 0.8em;
-        padding-bottom: 1em;
+      padding-top: 0;
+      font-size: .8em;
+      padding-bottom: 1em
     }
-
+  
     .main__info--data {
-        margin-left: 0;
+      margin-left: 0
     }
-
-}
-
-@media screen and (min-width: 1024px) {
+  }
+  
+  @media screen and (min-width:1024px) {
+    html {
+      height: 100vh
+    }
+  
+    body {
+      width: 100%;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      bottom: 0
+    }
+  
     main {
-        width: 70%;
-        margin: auto;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+      width: 900px;
+      margin: auto;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap
     }
-
+  
     .header__main {
-        justify-content: space-between;
-        border-bottom: 1px solid var(--dark-grey);
+      justify-content: space-between;
+      border-bottom: 1px solid var(--dark-grey)
     }
-
+  
     .header__secondary--tablette {
-        display: none;
+      display: none
     }
-
+  
     .header__secondary--desktop {
-        margin-left: auto;
-        display: flex;
-        justify-content: space-around;
-        line-height: 5rem;
+      margin-left: auto;
+      display: flex;
+      justify-content: space-around;
+      line-height: 5rem
     }
-
+  
     .header__secondary--desktop__title {
-        color: var(--grey);
-        margin-left: 2em;
-        height: 5rem;
-        line-height: 5rem;
+      color: var(--grey);
+      margin-left: 2em;
+      height: 5rem;
+      line-height: 5rem
     }
-
+  
     .header__secondary--desktop__title--active {
-        color: var(--white);
-        border-top: 5px solid var(--active-color);
-        line-height: 4.4rem;
+      color: var(--white);
+      border-top: 5px solid var(--active-color);
+      line-height: 4.4rem
     }
-
-    .main__planet{
-        width: 65%;
+  
+    .main__planet--active {
+      width: 60%;
+      height: 55vh
     }
-    .main__planet--img{
-        width: 35%;
+  
+    .main__planet--overlay {
+      top: 65%;
+      width: 9em;
+      height: 11.5em
     }
-    .main__content{
-        width: 35%;
-        flex-direction: column;
+  
+    .main__content {
+      width: 40%;
+      flex-direction: column;
+      height: 620px
     }
-    .content{
-        width: 100%;
-        margin-top: 5rem;
+  
+    .content {
+      width: 100%;
+      margin-top: 4.5rem;
+      height: 350px
     }
-    .content__text--link{
-        margin-top: 1em;
+  
+    .content__text--link {
+      margin-top: 1em
     }
-
-    .main__nav{
-        width: 100%;
-        padding-left: 0;
-        margin-top: 2rem;
+  
+    .main__nav {
+      width: 100%;
+      padding-left: 0;
+      margin-top: 2rem
     }
-
-    .main__info{
-        margin-top: 2rem;
+  
+    .planet-mercury {
+      width: 190px
     }
-
-}
+  
+    .planet-venus {
+      width: 300px
+    }
+  
+    .planet-earth {
+      width: 350px
+    }
+  
+    .planet-mars {
+      width: 236px
+    }
+  
+    .planet-jupiter {
+      width: 482px
+    }
+  
+    .planet-saturn {
+      width: 560px
+    }
+  
+    .planet-uranus {
+      width: 358px
+    }
+  
+    .planet-neptune {
+      width: 350px
+    }
+  }
+  

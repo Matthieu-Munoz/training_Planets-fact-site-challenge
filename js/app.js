@@ -1,9 +1,10 @@
 const app = {
 
   init: function () {
-    mainNav.init()
-    responsiveMenu.init()
-    planetNav.init()
+    pageContent.init();
+    mainNav.init();
+    responsiveMenu.init();
+    planetNav.init();
   },
 
   root : document.querySelector(':root')
