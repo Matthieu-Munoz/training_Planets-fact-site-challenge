@@ -63,24 +63,3 @@ const planetNav = {
     },
 
 };
-// const planetImg = {
-//     0: planetNav.overviewImg,
-//     1: planetNav.internalImg,
-//     2: planetNav.surfaceImg,
-// };
-
-// const planetDesc = {
-//     0: planetNav.overviewDesc,
-//     1: planetNav.internalDesc,
-//     2: planetNav.surfaceDesc,
-// };
-
-
-// removeClass: function () {
-//     for (const [key, element] of Object.entries(planetImg)){
-//         element.classList.remove('main__planet--active');
-//     }
-//     for (const [key, element] of Object.entries(planetDesc)){
-//        element.classList.remove('content__desc--active');
-//     }
-// },

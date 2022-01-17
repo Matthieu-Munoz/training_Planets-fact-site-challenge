@@ -24,7 +24,7 @@ const pageContent = {
             if (key.includes('Link')) {
                 element.href = value;
             } else if (key.includes('img')) {
-                element.src = '../assets/' + value;
+                element.src = 'assets/' + value;
                 if (key.includes('imgOverview') || key.includes('imgInternal')) {
                     element.classList.add(data[selectedPlanet]['class'])
                 }
