@@ -280,7 +280,8 @@
   }
   
   .main__nav {
-    display: none
+    display: none;
+    cursor: pointer
   }
   
   .header__secondary--desktop {
@@ -344,6 +345,7 @@
     }
   
     .header__secondary--tablette__title {
+      cursor: pointer;
       color: var(--grey)
     }
   
@@ -380,7 +382,8 @@
       margin-bottom: 1.5em;
       text-transform: uppercase;
       letter-spacing: 2.3px;
-      font-size: .9em
+      font-size: .9em;
+      cursor: pointer;
     }
   
     .main__nav--div:hover {
